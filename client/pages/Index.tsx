@@ -25,30 +25,46 @@ export default function Index() {
     <>
       <section className="relative overflow-hidden py-20 sm:py-28">
         <div className="container relative">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand shadow-[0_0_12px_theme(colors.brand/70%)]" />
-              Futuristic • Interactive • UI/UX
-            </p>
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.05] mb-6">
-              <span className="bg-gradient-to-r from-brand via-fuchsia-500 to-cyan-400 bg-clip-text text-transparent">
-                Prafull Dhage
-              </span>
-              <span className="block text-balance mt-2">2nd‑year ECS Student • Web Developer • UI/UX</span>
-            </h1>
-            <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto">
-              I design and develop websites using HTML, CSS, and C fundamentals, with hands‑on UI/UX experience in Figma. I build immersive, accessible interfaces with animations and a futuristic edge.
-            </p>
-            <div className="mt-8 flex items-center justify-center gap-3">
-              <a href="/projects">
-                <Button size="lg" className="bg-gradient-to-r from-brand to-cyan-500 text-white shadow-[0_0_24px_theme(colors.brand/30%)] hover:shadow-[0_0_36px_theme(colors.brand/50%)]">
-                  Explore Projects
-                  <ArrowRight className="ml-1 size-4" />
-                </Button>
-              </a>
-              <a href="mailto:hello@prafull.dev">
-                <Button size="lg" variant="outline">Get in touch</Button>
-              </a>
+          <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
+            <div className="text-center lg:text-left">
+              <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
+                <span className="h-1.5 w-1.5 rounded-full bg-brand shadow-[0_0_12px_theme(colors.brand/70%)]" />
+                Futuristic • Interactive • UI/UX
+              </p>
+              <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.05] mb-6">
+                <span className="bg-gradient-to-r from-brand via-fuchsia-500 to-cyan-400 bg-clip-text text-transparent">
+                  Prafull Dhage
+                </span>
+                <span className="block text-balance mt-2">2nd‑year ECS Student • Web Developer • UI/UX</span>
+              </h1>
+              <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0">
+                I design and develop websites using HTML, CSS, and C fundamentals, with hands‑on UI/UX experience in Figma. I build immersive, accessible interfaces with animations and a futuristic edge.
+              </p>
+              <div className="mt-8 flex items-center justify-center lg:justify-start gap-3">
+                <a href="/projects">
+                  <Button size="lg" className="bg-gradient-to-r from-brand to-cyan-500 text-white shadow-[0_0_24px_theme(colors.brand/30%)] hover:shadow-[0_0_36px_theme(colors.brand/50%)]">
+                    Explore Projects
+                    <ArrowRight className="ml-1 size-4" />
+                  </Button>
+                </a>
+                <a href="mailto:hello@prafull.dev">
+                  <Button size="lg" variant="outline">Get in touch</Button>
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative animate-float">
+                <div className="p-[3px] rounded-full bg-gradient-to-br from-brand via-fuchsia-500 to-cyan-400 shadow-[0_0_30px_hsl(var(--brand-500)/0.35)]">
+                  <div className="rounded-full bg-background p-1">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fcaaa4ede07ec445597e01b5c69a33caa%2F2e822857be3543b382e763d9b4d6ec84?format=webp&width=800"
+                      alt="Prafull Dhage portrait"
+                      className="h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 rounded-full object-cover object-center"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

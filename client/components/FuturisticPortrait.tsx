@@ -4,7 +4,7 @@ export default function FuturisticPortrait({
   src,
   alt,
   className,
-  rotate = "rotate-90",
+  rotate = "rotate-0",
 }: {
   src: string;
   alt: string;
@@ -27,10 +27,43 @@ export default function FuturisticPortrait({
           <div aria-hidden className="pointer-events-none absolute inset-0 rounded-full noise opacity-[0.08]" />
         </div>
         {/* outer glow */}
-        <div aria-hidden className="absolute -inset-3 rounded-full bg-[radial-gradient(circle_at_50%_50%,hsl(var(--brand-500)/0.45),transparent_60%)] blur-2xl" />
+        <div
+          aria-hidden
+          className="absolute rounded-full blur-2xl"
+          style={{
+            backgroundImage: "radial-gradient(circle, hsl(var(--brand-500)/0.45), rgba(0,0,0,0) 60%)",
+            bottom: "-12px",
+            right: "-12px",
+            left: "475px",
+            top: "-156px",
+            marginRight: "auto",
+            width: "266px",
+          }}
+        />
       </div>
       {/* sheen */}
-      <span aria-hidden className="absolute -inset-1 rounded-full bg-gradient-to-r from-transparent via-white/25 to-transparent opacity-0 animate-sheen" />
+      <span
+        aria-hidden
+        className="absolute block rounded-full"
+        style={{
+          animationDelay: "2s",
+          animationDuration: "3s",
+          animationIterationCount: "infinite",
+          animationName: "sheen",
+          animationTimingFunction: "ease-in-out",
+          backgroundImage:
+            "linear-gradient(to right, rgba(0,0,0,0), rgba(255,255,255,0.25), rgba(0,0,0,0))",
+          opacity: 0.0335492,
+          borderRadius: 9999,
+          position: "absolute",
+          left: "-4px",
+          right: "-4px",
+          top: "-4px",
+          bottom: "-4px",
+          transform:
+            "matrix(0.984808, 0.173648, -0.173648, 0.984808, -297.171, 0)",
+        }}
+      />
     </div>
   );
 }

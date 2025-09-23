@@ -4,10 +4,12 @@ export default function FuturisticPortrait({
   src,
   alt,
   className,
+  rotate = "rotate-90",
 }: {
   src: string;
   alt: string;
   className?: string;
+  rotate?: string;
 }) {
   return (
     <div className={cn("relative inline-block", className)}>
@@ -16,7 +18,7 @@ export default function FuturisticPortrait({
           <img
             src={src}
             alt={alt}
-            className="block h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 rounded-full object-cover object-center"
+            className={cn("block h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 rounded-full object-cover object-center", rotate)}
             loading="eager"
           />
           {/* holographic overlays */}

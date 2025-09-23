@@ -58,7 +58,6 @@ export default function Index() {
                 <FuturisticPortrait
                   src="https://cdn.builder.io/api/v1/image/assets%2Fcaaa4ede07ec445597e01b5c69a33caa%2F2e822857be3543b382e763d9b4d6ec84?format=webp&width=800"
                   alt="Prafull Dhage portrait"
-                  rotate="-rotate-90"
                 />
               </div>
             </div>

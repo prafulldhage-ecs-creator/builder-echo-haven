@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Copy, ArrowRight, Check } from "lucide-react";
+import FuturisticPortrait from "@/components/FuturisticPortrait";
 
 export default function Index() {
   const [copied, setCopied] = useState<string | null>(null);
@@ -54,16 +55,10 @@ export default function Index() {
             </div>
             <div className="flex justify-center lg:justify-end">
               <div className="relative animate-float">
-                <div className="p-[3px] rounded-full bg-gradient-to-br from-brand via-fuchsia-500 to-cyan-400 shadow-[0_0_30px_hsl(var(--brand-500)/0.35)]">
-                  <div className="rounded-full bg-background p-1">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fcaaa4ede07ec445597e01b5c69a33caa%2F2e822857be3543b382e763d9b4d6ec84?format=webp&width=800"
-                      alt="Prafull Dhage portrait"
-                      className="h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 rounded-full object-cover object-center"
-                      loading="eager"
-                    />
-                  </div>
-                </div>
+                <FuturisticPortrait
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fcaaa4ede07ec445597e01b5c69a33caa%2F2e822857be3543b382e763d9b4d6ec84?format=webp&width=800"
+                  alt="Prafull Dhage portrait"
+                />
               </div>
             </div>
           </div>

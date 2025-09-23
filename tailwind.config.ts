@@ -81,12 +81,18 @@ export default {
           "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--brand-500)/0.3)" },
           "50%": { boxShadow: "0 0 32px 0 hsl(var(--brand-500)/0.5)" },
         },
+        sheen: {
+          "0%": { opacity: "0", transform: "translateX(-120%) rotate(10deg)" },
+          "15%, 60%": { opacity: "1" },
+          "100%": { opacity: "0", transform: "translateX(120%) rotate(10deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         float: "float 6s ease-in-out infinite",
         glow: "glow 3.5s ease-in-out infinite",
+        sheen: "sheen 3s ease-in-out infinite 2s",
       },
       fontFamily: {
         sans: ["Inter", "Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],

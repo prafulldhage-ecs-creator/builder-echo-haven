@@ -124,10 +124,29 @@ export default function Index() {
           <AchievementsCarousel
             items={[
               { title: "Avinya'25 — 2nd Place", meta: "Atharva College of Engineering", description: "Team project SYNERGIA: Solar + Piezo hybrid energy for smart city and wearable devices." },
+              { title: "ACE MUN — Participation Certificate", meta: "Atharva College of Engineering", description: "Participated in ACE MUN, collaborating, debating, and presenting ideas with clarity and confidence." },
               { title: "IEEE Techithon", meta: "Webmaster Assistant Head", description: "Web management and coordination for the college’s flagship tech event." },
               { title: "UI/UX Mini Projects", description: "Interactive Figma prototypes and micro‑interactions exploring futuristic aesthetics." },
             ]}
           />
+        </div>
+
+        <h3 className="mx-auto mt-10 max-w-5xl text-lg font-medium tracking-tight">Volunteering</h3>
+        <div className="mx-auto mt-4 grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="group relative rounded-xl p-[1.5px] bg-[conic-gradient(from_180deg,theme(colors.brand),#a855f7,#22d3ee,theme(colors.brand))]">
+            <div className="rounded-[11px] border border-border/50 bg-background/60 p-5 backdrop-blur transition group-hover:border-border group-hover:shadow-[0_0_30px_hsl(var(--brand-500)/0.2)]">
+              <h4 className="font-semibold tracking-tight">Digital Team — Student Council</h4>
+              <p className="text-xs text-muted-foreground mt-1">Atharva College of Engineering</p>
+              <p className="text-sm text-muted-foreground mt-2">Supported digital content, event pages, and announcements with a focus on clean UX and rapid iteration.</p>
+            </div>
+          </div>
+          <div className="group relative rounded-xl p-[1.5px] bg-[conic-gradient(from_180deg,theme(colors.brand),#a855f7,#22d3ee,theme(colors.brand))]">
+            <div className="rounded-[11px] border border-border/50 bg-background/60 p-5 backdrop-blur transition group-hover:border-border group-hover:shadow-[0_0_30px_hsl(var(--brand-500)/0.2)]">
+              <h4 className="font-semibold tracking-tight">Student Council — Volunteer</h4>
+              <p className="text-xs text-muted-foreground mt-1">Atharva College of Engineering</p>
+              <p className="text-sm text-muted-foreground mt-2">Contributed to event coordination, communications, and tech support for activities across campus.</p>
+            </div>
+          </div>
         </div>
       </section>
 

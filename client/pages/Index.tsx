@@ -5,9 +5,9 @@ import { Copy, ArrowRight, Check } from "lucide-react";
 export default function Index() {
   const [copied, setCopied] = useState<string | null>(null);
   const shortPurpose =
-    "Futuristic, interactive portfolio showcasing my web development and UI/UX skills — crafted to attract internships, full‑time roles, and freelance clients.";
+    "Futuristic, interactive portfolio by a 2nd‑year ECS engineering student, showcasing web development and UI/UX skills — built to attract internships, full‑time roles, and freelance clients.";
   const longPurpose =
-    "A modern, animation‑rich website that highlights my technical skills, creativity, and projects. Built to impress potential employers and clients while demonstrating solid fundamentals and a growth mindset. Designed and developed with attention to accessibility, performance, and futuristic aesthetics.";
+    "A modern, animation‑rich website highlighting my skills, creativity, and projects. Built to impress employers and clients while demonstrating strong fundamentals and a growth mindset. Designed in Figma and developed with HTML, CSS, and C foundations, with attention to accessibility, performance, and futuristic aesthetics.";
 
   useEffect(() => {
     document.title = "Prafull Dhage — Portfolio";
@@ -34,7 +34,7 @@ export default function Index() {
               <span className="bg-gradient-to-r from-brand via-fuchsia-500 to-cyan-400 bg-clip-text text-transparent">
                 Prafull Dhage
               </span>
-              <span className="block text-balance mt-2">ECS Student • Web Developer • UI/UX</span>
+              <span className="block text-balance mt-2">2nd‑year ECS Student • Web Developer • UI/UX</span>
             </h1>
             <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto">
               I design and develop websites using HTML, CSS, and C fundamentals, with hands‑on UI/UX experience in Figma. I build immersive, accessible interfaces with animations and a futuristic edge.

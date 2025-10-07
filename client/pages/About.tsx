@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import FuturisticPortrait from "@/components/FuturisticPortrait";
 import SkillCircle from "@/components/SkillCircle";
 import {
-  Award,
   Calendar,
   FileDown,
   Github,

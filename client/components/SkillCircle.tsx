@@ -2,7 +2,15 @@ import { motion } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export default function SkillCircle({ label, value, className }: { label: string; value: number; className?: string }) {
+export default function SkillCircle({
+  label,
+  value,
+  className,
+}: {
+  label: string;
+  value: number;
+  className?: string;
+}) {
   const clamped = Math.min(Math.max(value, 0), 100);
   return (
     <div className={cn("flex flex-col items-center gap-2", className)}>
@@ -15,7 +23,14 @@ export default function SkillCircle({ label, value, className }: { label: string
               <stop offset="100%" stopColor="#22d3ee" />
             </linearGradient>
           </defs>
-          <circle cx="18" cy="18" r="15.5" fill="none" stroke="hsl(var(--border))" strokeWidth="2" />
+          <circle
+            cx="18"
+            cy="18"
+            r="15.5"
+            fill="none"
+            stroke="hsl(var(--border))"
+            strokeWidth="2"
+          />
           <motion.circle
             cx="18"
             cy="18"

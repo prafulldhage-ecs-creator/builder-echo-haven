@@ -17,12 +17,20 @@ const skillGroups = [
   {
     title: "UI/UX Design",
     accent: "Figma",
-    items: ["Design systems", "Interactive prototypes", "User research synthesis"],
+    items: [
+      "Design systems",
+      "Interactive prototypes",
+      "User research synthesis",
+    ],
   },
   {
     title: "Web Development",
     accent: "HTML • CSS • JavaScript • React",
-    items: ["Responsive storytelling", "Performance-focused layouts", "Framer Motion animations"],
+    items: [
+      "Responsive storytelling",
+      "Performance-focused layouts",
+      "Framer Motion animations",
+    ],
   },
   {
     title: "Python",
@@ -48,7 +56,11 @@ const experience = [
     timeline: "2023 — Present",
     description:
       "Shape campus-wide design challenges, mentor peers, and host workshops that merge creativity with engineering rigor.",
-    highlights: ["Community leadership", "Design critiques", "Hackathon support"],
+    highlights: [
+      "Community leadership",
+      "Design critiques",
+      "Hackathon support",
+    ],
   },
   {
     role: "Webmaster Assistant Head",
@@ -56,7 +68,11 @@ const experience = [
     timeline: "2023 — Present",
     description:
       "Architect and maintain the flagship event website, orchestrating UI flows, schedules, and live updates for thousands of visitors.",
-    highlights: ["End-to-end UX", "Cross-team coordination", "Real-time rollouts"],
+    highlights: [
+      "End-to-end UX",
+      "Cross-team coordination",
+      "Real-time rollouts",
+    ],
   },
 ];
 
@@ -105,7 +121,8 @@ export default function Index() {
               className="relative"
             >
               <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs uppercase tracking-[0.26em] text-muted-foreground backdrop-blur">
-                <Sparkles className="size-3.5 text-brand" /> UI/UX | Web Dev | GDGC | Video Editing
+                <Sparkles className="size-3.5 text-brand" /> UI/UX | Web Dev |
+                GDGC | Video Editing
               </span>
               <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight sm:text-6xl">
                 Hey there 👋 I’m
@@ -114,7 +131,10 @@ export default function Index() {
                 </span>
               </h1>
               <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-                I’m a UI/UX Designer, Web Developer, and GDGC Committee Member blending modern aesthetics with engineering foundations. From interactive event platforms to safety-driven hardware, I build stories where every interaction feels intentional.
+                I’m a UI/UX Designer, Web Developer, and GDGC Committee Member
+                blending modern aesthetics with engineering foundations. From
+                interactive event platforms to safety-driven hardware, I build
+                stories where every interaction feels intentional.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <a href="#projects">
@@ -127,7 +147,11 @@ export default function Index() {
                   </Button>
                 </a>
                 <a href="/resume.pdf" download>
-                  <Button variant="outline" size="lg" className="border-border/70 bg-background/60 backdrop-blur">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-border/70 bg-background/60 backdrop-blur"
+                  >
                     <FileDown className="mr-2 size-4" /> Download Resume
                   </Button>
                 </a>
@@ -139,7 +163,10 @@ export default function Index() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.15 }}
             >
-              <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-brand/35 via-transparent to-cyan-400/20 blur-2xl" aria-hidden />
+              <div
+                className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-brand/35 via-transparent to-cyan-400/20 blur-2xl"
+                aria-hidden
+              />
               <div className="relative rounded-[2rem] border border-border/60 bg-background/70 p-6 backdrop-blur-xl">
                 <div className="h-80 w-64">
                   <FuturisticPortrait
@@ -149,8 +176,13 @@ export default function Index() {
                   />
                 </div>
                 <div className="mt-4 space-y-1 text-sm text-muted-foreground">
-                  <p className="font-medium text-foreground">Webmaster Assistant Head — IEEE Techithon</p>
-                  <p>Crafting seamless event UI experiences with real-time updates.</p>
+                  <p className="font-medium text-foreground">
+                    Webmaster Assistant Head — IEEE Techithon
+                  </p>
+                  <p>
+                    Crafting seamless event UI experiences with real-time
+                    updates.
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -174,13 +206,20 @@ export default function Index() {
             />
             <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
               <p>
-                I’m passionate about building digital experiences that blend design and technology. As the Webmaster Assistant Head for IEEE Techithon, I help manage and develop event websites, ensuring every interaction feels intuitive and visually engaging.
+                I’m passionate about building digital experiences that blend
+                design and technology. As the Webmaster Assistant Head for IEEE
+                Techithon, I help manage and develop event websites, ensuring
+                every interaction feels intuitive and visually engaging.
               </p>
               <p>
-                I’m exploring Python and diving deeper into web frameworks while also polishing video edits in CapCut and Adobe Premiere Pro. My team is currently prototyping a CPLD-Based Gas Leakage Detector focused on safety innovation and real-time alerts.
+                I’m exploring Python and diving deeper into web frameworks while
+                also polishing video edits in CapCut and Adobe Premiere Pro. My
+                team is currently prototyping a CPLD-Based Gas Leakage Detector
+                focused on safety innovation and real-time alerts.
               </p>
               <p>
-                Always eager to learn, collaborate, and create — I believe every design and line of code tells a story ready to inspire action.
+                Always eager to learn, collaborate, and create — I believe every
+                design and line of code tells a story ready to inspire action.
               </p>
             </div>
           </motion.div>
@@ -192,19 +231,38 @@ export default function Index() {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <div className="relative w-full max-w-md rounded-[2rem] border border-border/60 bg-background/70 p-6 backdrop-blur-xl">
-              <div className="absolute -inset-6 rounded-[2.5rem] bg-[conic-gradient(from_180deg,theme(colors.brand),#7c3aed,#38bdf8,theme(colors.brand))] opacity-20 blur-3xl" aria-hidden />
+              <div
+                className="absolute -inset-6 rounded-[2.5rem] bg-[conic-gradient(from_180deg,theme(colors.brand),#7c3aed,#38bdf8,theme(colors.brand))] opacity-20 blur-3xl"
+                aria-hidden
+              />
               <div className="relative rounded-[1.75rem] border border-border/50 bg-background/80 p-5 backdrop-blur">
                 <div className="grid gap-6">
                   <div className="rounded-xl border border-border/60 bg-background/70 p-4">
-                    <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Current Focus</p>
+                    <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
+                      Current Focus
+                    </p>
                     <p className="mt-2 text-sm text-muted-foreground">
-                      CPLD-Based Gas Leakage Detector — blending hardware logic with responsive dashboards for safety-first storytelling.
+                      CPLD-Based Gas Leakage Detector — blending hardware logic
+                      with responsive dashboards for safety-first storytelling.
                     </p>
                   </div>
                   <div className="grid gap-3 text-sm text-muted-foreground">
-                    <p className="flex items-center justify-between gap-3"><span>Location</span><span className="text-foreground">Mumbai, India</span></p>
-                    <p className="flex items-center justify-between gap-3"><span>Role</span><span className="text-foreground">GDGC Committee Member</span></p>
-                    <p className="flex items-center justify-between gap-3"><span>Superpower</span><span className="text-foreground">Turning ideas into interactive experiences</span></p>
+                    <p className="flex items-center justify-between gap-3">
+                      <span>Location</span>
+                      <span className="text-foreground">Mumbai, India</span>
+                    </p>
+                    <p className="flex items-center justify-between gap-3">
+                      <span>Role</span>
+                      <span className="text-foreground">
+                        GDGC Committee Member
+                      </span>
+                    </p>
+                    <p className="flex items-center justify-between gap-3">
+                      <span>Superpower</span>
+                      <span className="text-foreground">
+                        Turning ideas into interactive experiences
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -233,12 +291,19 @@ export default function Index() {
                 aria-hidden
                 className="pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-gradient-to-br from-brand/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl transition-all group-hover:from-brand/50"
               />
-              <h3 className="text-lg font-semibold tracking-tight text-foreground">{skill.title}</h3>
-              <p className="mt-1 text-xs uppercase tracking-[0.28em] text-muted-foreground">{skill.accent}</p>
+              <h3 className="text-lg font-semibold tracking-tight text-foreground">
+                {skill.title}
+              </h3>
+              <p className="mt-1 text-xs uppercase tracking-[0.28em] text-muted-foreground">
+                {skill.accent}
+              </p>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                 {skill.items.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-gradient-to-r from-brand to-cyan-400" aria-hidden />
+                    <span
+                      className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-gradient-to-r from-brand to-cyan-400"
+                      aria-hidden
+                    />
                     {item}
                   </li>
                 ))}
@@ -259,12 +324,18 @@ export default function Index() {
             <GlassyCard key={item.role}>
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div>
-                  <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.role}</h3>
+                  <h3 className="text-lg font-semibold tracking-tight text-foreground">
+                    {item.role}
+                  </h3>
                   <p className="text-sm text-muted-foreground">{item.place}</p>
                 </div>
-                <span className="rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs text-muted-foreground">{item.timeline}</span>
+                <span className="rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs text-muted-foreground">
+                  {item.timeline}
+                </span>
               </div>
-              <p className="mt-4 text-sm text-muted-foreground">{item.description}</p>
+              <p className="mt-4 text-sm text-muted-foreground">
+                {item.description}
+              </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {item.highlights.map((highlight) => (
                   <TagChip key={highlight}>{highlight}</TagChip>
@@ -284,8 +355,12 @@ export default function Index() {
         <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-5 md:grid-cols-3">
           {projects.map((project) => (
             <GlassyCard key={project.title}>
-              <h3 className="text-lg font-semibold tracking-tight text-foreground">{project.title}</h3>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{project.description}</p>
+              <h3 className="text-lg font-semibold tracking-tight text-foreground">
+                {project.title}
+              </h3>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                {project.description}
+              </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <TagChip key={tag}>{tag}</TagChip>
@@ -307,7 +382,8 @@ export default function Index() {
           <GlassyCard>
             <div className="space-y-4 text-sm text-muted-foreground">
               <p>
-                Drop a message or connect across platforms — I’m quick to respond and always excited to jam on bold ideas.
+                Drop a message or connect across platforms — I’m quick to
+                respond and always excited to jam on bold ideas.
               </p>
               <div className="flex flex-col gap-3">
                 <a
@@ -334,9 +410,9 @@ export default function Index() {
               const message = data.get("message");
               if (typeof window !== "undefined") {
                 if (typeof window !== "undefined") {
-                  window.location.href = `mailto:hello@prafull.dev?subject=Portfolio%20hello%20from%20${encodeURIComponent(String(
-                    name || ""
-                  ))}&body=${encodeURIComponent(String(message || ""))}%0A%0AFrom:%20${encodeURIComponent(String(email || ""))}`;
+                  window.location.href = `mailto:hello@prafull.dev?subject=Portfolio%20hello%20from%20${encodeURIComponent(
+                    String(name || ""),
+                  )}&body=${encodeURIComponent(String(message || ""))}%0A%0AFrom:%20${encodeURIComponent(String(email || ""))}`;
                 }
               }
             }}
@@ -346,7 +422,10 @@ export default function Index() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <div className="absolute inset-0 rounded-2xl bg-[radial-gradient(circle_at_top,theme(colors.brand)/0.3,transparent_65%)] opacity-80" aria-hidden />
+            <div
+              className="absolute inset-0 rounded-2xl bg-[radial-gradient(circle_at_top,theme(colors.brand)/0.3,transparent_65%)] opacity-80"
+              aria-hidden
+            />
             <div className="relative grid gap-3">
               <input
                 name="name"
@@ -367,7 +446,10 @@ export default function Index() {
                 required
                 className="min-h-32 rounded-md border border-border/60 bg-background/70 p-3 outline-none transition focus:ring-2 focus:ring-[hsl(var(--brand-500))]"
               />
-              <Button type="submit" className="mt-2 bg-gradient-to-r from-brand via-fuchsia-500 to-cyan-400 text-white">
+              <Button
+                type="submit"
+                className="mt-2 bg-gradient-to-r from-brand via-fuchsia-500 to-cyan-400 text-white"
+              >
                 Send message
               </Button>
             </div>
@@ -390,11 +472,18 @@ function SectionHeading({
   return (
     <div className="mx-auto max-w-3xl text-center">
       <span className="relative inline-flex items-center justify-center gap-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-        <span className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-brand to-transparent opacity-60" aria-hidden />
+        <span
+          className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-brand to-transparent opacity-60"
+          aria-hidden
+        />
         {eyebrow}
       </span>
-      <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h2>
-      <p className="mt-3 text-sm text-muted-foreground sm:text-base">{description}</p>
+      <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
+        {title}
+      </h2>
+      <p className="mt-3 text-sm text-muted-foreground sm:text-base">
+        {description}
+      </p>
     </div>
   );
 }
@@ -408,7 +497,10 @@ function GlassyCard({ children }: { children: ReactNode }) {
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <div className="absolute -top-20 -right-20 h-40 w-40 rounded-full bg-gradient-to-br from-brand/25 via-fuchsia-500/10 to-cyan-400/10 blur-3xl" aria-hidden />
+      <div
+        className="absolute -top-20 -right-20 h-40 w-40 rounded-full bg-gradient-to-br from-brand/25 via-fuchsia-500/10 to-cyan-400/10 blur-3xl"
+        aria-hidden
+      />
       <div className="relative space-y-4">{children}</div>
     </motion.div>
   );
@@ -438,7 +530,10 @@ function SocialLink({
       rel="noreferrer"
       className="group relative inline-flex size-11 items-center justify-center overflow-hidden rounded-full border border-border/60 bg-background/60 text-muted-foreground transition hover:text-brand"
     >
-      <span className="absolute inset-0 bg-gradient-to-br from-brand/40 via-transparent to-cyan-400/30 opacity-0 transition group-hover:opacity-100" aria-hidden />
+      <span
+        className="absolute inset-0 bg-gradient-to-br from-brand/40 via-transparent to-cyan-400/30 opacity-0 transition group-hover:opacity-100"
+        aria-hidden
+      />
       <Icon className="size-5" />
       <span className="sr-only">{label}</span>
     </a>
@@ -447,7 +542,10 @@ function SocialLink({
 
 function GradientBackdrop() {
   return (
-    <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+    >
       <motion.div
         className="absolute left-1/2 top-20 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,hsla(var(--brand-500),0.45),transparent_65%)] blur-3xl"
         animate={{ rotate: [0, 360] }}

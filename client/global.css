@@ -103,7 +103,19 @@
   }
 
   body {
-    font-family: Inter, "Space Grotesk", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    font-family:
+      Inter,
+      "Space Grotesk",
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      Segoe UI,
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      "Apple Color Emoji",
+      "Segoe UI Emoji";
     @apply bg-background text-foreground antialiased;
   }
 }
@@ -114,9 +126,21 @@
     inset: -20% -10% auto -10%;
     height: 70vh;
     background:
-      radial-gradient(600px 300px at 10% 10%, hsl(var(--brand-500)/0.20), transparent 70%),
-      radial-gradient(500px 220px at 80% 20%, hsl(255 88% 64%/0.18), transparent 65%),
-      radial-gradient(400px 200px at 30% 80%, hsl(210 90% 62%/0.18), transparent 60%);
+      radial-gradient(
+        600px 300px at 10% 10%,
+        hsl(var(--brand-500) / 0.2),
+        transparent 70%
+      ),
+      radial-gradient(
+        500px 220px at 80% 20%,
+        hsl(255 88% 64%/0.18),
+        transparent 65%
+      ),
+      radial-gradient(
+        400px 200px at 30% 80%,
+        hsl(210 90% 62%/0.18),
+        transparent 60%
+      );
     filter: blur(40px);
     pointer-events: none;
     z-index: -1;
@@ -124,17 +148,31 @@
   .grid-bg {
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(to right, hsl(var(--border)/0.2) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--border)/0.2) 1px, transparent 1px);
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.2) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.2) 1px, transparent 1px);
     background-size: 36px 36px;
     mask-image: radial-gradient(circle at 50% 30%, black 40%, transparent 75%);
-    opacity: .4;
+    opacity: 0.4;
     z-index: -2;
   }
   .holo-gradient {
-    background: conic-gradient(from 180deg, hsl(var(--brand-500)/.35), hsl(260 87% 70%/.35), hsl(190 100% 50%/.35), hsl(var(--brand-500)/.35));
+    background: conic-gradient(
+      from 180deg,
+      hsl(var(--brand-500) / 0.35),
+      hsl(260 87% 70%/0.35),
+      hsl(190 100% 50%/0.35),
+      hsl(var(--brand-500) / 0.35)
+    );
   }
   .scanlines {
-    background: repeating-linear-gradient( to bottom, rgba(255,255,255,.08) 0px, rgba(255,255,255,.08) 1px, transparent 2px, transparent 4px );
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 2px,
+      transparent 4px
+    );
     mix-blend-mode: overlay;
   }
   .noise {

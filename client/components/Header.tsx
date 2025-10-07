@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Mail } from "lucide-react";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -13,6 +14,7 @@ export default function Header() {
         </Link>
         <nav className="hidden sm:flex items-center gap-6 text-sm">
           <NavItem to="/" label="Home" />
+          <NavItem to="/about" label="About" />
           <NavItem to="/projects" label="Projects" />
           <a href="mailto:hello@prafull.dev" className="text-muted-foreground hover:text-foreground inline-flex items-center gap-2">
             <Mail className="size-4" />
@@ -20,14 +22,14 @@ export default function Header() {
           </a>
         </nav>
         <div className="flex items-center gap-2">
-          <a href="#purpose" className="hidden sm:inline-flex">
-            <Button variant="ghost" size="sm">Purpose</Button>
-          </a>
-          <a href="/projects">
+          <Link to="/about" className="hidden sm:inline-flex">
+            <Button variant="ghost" size="sm">About</Button>
+          </Link>
+          <Link to="/projects">
             <Button size="sm" className="bg-gradient-to-r from-brand to-cyan-500 text-white shadow-[0_0_20px_theme(colors.brand/30%)] hover:shadow-[0_0_30px_theme(colors.brand/50%)]">
               View Projects
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </header>

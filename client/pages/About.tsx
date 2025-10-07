@@ -1,50 +1,69 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import FuturisticPortrait from "@/components/FuturisticPortrait";
 import SkillCircle from "@/components/SkillCircle";
-import { Award, Calendar, FileDown, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import {
+  Award,
+  Calendar,
+  FileDown,
+  Github,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Sparkles,
+} from "lucide-react";
 
 const expertise = [
   {
-    title: "UI/UX Design Systems",
+    title: "Human-centered UI/UX",
     description:
-      "Crafting glassmorphism interfaces, neon gradients, and interaction patterns that stay accessible and performant.",
+      "Crafting glassmorphism experiences, blue–violet gradients, and interaction patterns that stay accessible and performance-ready across devices.",
   },
   {
-    title: "Frontend Engineering",
+    title: "Interactive Web Development",
     description:
-      "Building responsive layouts with semantic HTML, layered CSS effects, and animation pipelines rooted in solid C fundamentals.",
+      "Bringing designs to life with semantic HTML, responsive CSS, React, and Framer Motion to translate ideas into immersive journeys.",
   },
   {
-    title: "Prototyping & Iteration",
+    title: "Content & Community",
     description:
-      "Translating Figma prototypes into production-ready experiences, refining details based on feedback and usability insights.",
+      "Hosting GDGC initiatives, driving IEEE Techithon web rollouts, and polishing video narratives with CapCut and Adobe Premiere Pro.",
   },
 ];
 
 const education = [
   {
     school: "Atharva College of Engineering",
-    program: "B.E. Electronics and Computer Science (ECS)",
+    program: "B.E. Electronics & Computer Science (ECS)",
     timeline: "2023 — Present",
     location: "Mumbai, India",
-    highlight: "2nd-year student focusing on human-centered interfaces and embedded-friendly web systems.",
+    highlight:
+      "Exploring the crossroads of engineering and design while leading GDGC committee collaborations and campus-wide UX workshops.",
   },
   {
-    school: "ACE Student Council",
-    program: "Digital Team & IEEE Techithon",
+    school: "IEEE Techithon",
+    program: "Webmaster Assistant Head",
     timeline: "2023 — Present",
-    location: "Campus Initiatives",
-    highlight: "Assistant Head for web and media, coordinating tech fests, hackathons, and communication pipelines.",
+    location: "ACE Student Council",
+    highlight:
+      "Designing, shipping, and iterating on event platforms with real-time schedules, sponsor highlights, and glowing interface details.",
   },
 ];
 
 const skillMeter = [
-  { label: "HTML", value: 85 },
-  { label: "CSS", value: 82 },
-  { label: "C", value: 70 },
-  { label: "Figma", value: 88 },
-  { label: "UI/UX", value: 84 },
+  { label: "Figma", value: 90 },
+  { label: "React", value: 85 },
+  { label: "HTML/CSS", value: 88 },
+  { label: "Python", value: 70 },
+  { label: "Video Editing", value: 80 },
+];
+
+const socials = [
+  { label: "LinkedIn", href: "https://linkedin.com/", icon: Linkedin },
+  { label: "GitHub", href: "https://github.com/", icon: Github },
+  { label: "Instagram", href: "https://instagram.com/", icon: Instagram },
 ];
 
 export default function About() {
@@ -56,31 +75,60 @@ export default function About() {
     <div className="space-y-20 pb-24">
       <section className="relative overflow-hidden pt-16">
         <div className="container relative">
-          <div className="mx-auto max-w-4xl text-center">
-            <motion.p
-              className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur"
-              initial={{ opacity: 0, y: 12 }}
+          <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Award className="size-3.5 text-brand" /> About Prafull Dhage
-            </motion.p>
-            <motion.h1
-              className="mt-6 text-balance text-4xl font-extrabold tracking-tight sm:text-5xl"
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs uppercase tracking-[0.28em] text-muted-foreground backdrop-blur">
+                <Sparkles className="size-3.5 text-brand" /> Story-first designer & technologist
+              </span>
+              <h1 className="text-balance text-4xl font-extrabold tracking-tight sm:text-5xl">
+                Designing immersive, future-ready experiences that connect people to possibilities
+              </h1>
+              <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+                <p>
+                  Hey there 👋 I’m Prafull Dhage, a UI/UX Designer, Web Developer, and GDGC Committee Member currently pursuing my B.E. in Electronics & Computer Science at Atharva College of Engineering.
+                </p>
+                <p>
+                  I’m passionate about experiences that blend design and technology. As the Webmaster Assistant Head for IEEE Techithon, I guide event platforms end-to-end — managing content, crafting UI flows, and launching real-time updates.
+                </p>
+                <p>
+                  I’m exploring Python and deepening my web framework expertise while producing polished narratives through CapCut and Adobe Premiere Pro. My team is also prototyping a CPLD-Based Gas Leakage Detector, merging safety innovation with responsive dashboards.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3 text-xs uppercase tracking-[0.24em] text-muted-foreground">
+                <span className="rounded-full border border-border/60 bg-background/60 px-3 py-1">UI/UX</span>
+                <span className="rounded-full border border-border/60 bg-background/60 px-3 py-1">Web Dev</span>
+                <span className="rounded-full border border-border/60 bg-background/60 px-3 py-1">GDGC</span>
+                <span className="rounded-full border border-border/60 bg-background/60 px-3 py-1">Video Editing</span>
+              </div>
+            </motion.div>
+            <motion.div
+              className="relative flex items-center justify-center"
+              initial={{ opacity: 0, scale: 0.94 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
-              Designing immersive, future-ready experiences across web and UI/UX
-            </motion.h1>
-            <motion.p
-              className="mt-4 text-lg text-muted-foreground"
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              I’m a second-year ECS engineering student blending design thinking with engineering principles. From solar-powered smart wearables to animated UI systems, I craft digital stories that feel alive, inclusive, and technically grounded.
-            </motion.p>
+              <div className="absolute -inset-8 rounded-[3rem] bg-[conic-gradient(from_180deg,theme(colors.brand),#7c3aed,#38bdf8,theme(colors.brand))] opacity-30 blur-3xl" aria-hidden />
+              <div className="relative rounded-[2.5rem] border border-border/60 bg-background/70 p-6 backdrop-blur-xl">
+                <div className="rounded-[2rem] border border-border/60 bg-background/70 p-5">
+                  <div className="mx-auto w-[260px]">
+                    <FuturisticPortrait
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fcaaa4ede07ec445597e01b5c69a33caa%2F2e822857be3543b382e763d9b4d6ec84?format=webp&width=800"
+                      alt="Prafull Dhage portrait"
+                      rotate="-rotate-2"
+                    />
+                  </div>
+                  <div className="mt-4 rounded-xl border border-border/60 bg-background/70 p-4 text-sm text-muted-foreground">
+                    <p className="font-medium text-foreground">Currently building</p>
+                    <p className="mt-1">CPLD-Based Gas Leakage Detector — real-time alerts, hardware dashboards, and safety-first UX.</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -90,19 +138,19 @@ export default function About() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold tracking-tight">Skills & Expertise</h2>
             <p className="text-sm text-muted-foreground">
-              Each project is a collaboration between research-backed UX, futuristic aesthetics, and reliable engineering. Here’s how those disciplines come together.
+              Each project balances research-backed UX, futuristic aesthetics, and dependable engineering to deliver narratives that feel alive.
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               {expertise.map((item) => (
                 <motion.article
                   key={item.title}
-                  className="group relative overflow-hidden rounded-xl border border-border/60 bg-background/60 p-5 backdrop-blur transition hover:border-border"
+                  className="group relative overflow-hidden rounded-2xl border border-border/60 bg-background/60 p-5 backdrop-blur transition hover:border-border"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
                 >
-                  <div aria-hidden className="pointer-events-none absolute -top-16 -right-16 h-32 w-32 rounded-full bg-gradient-to-br from-brand/20 via-fuchsia-500/10 to-cyan-400/10 blur-2xl group-hover:from-brand/30 transition-colors" />
+                  <div aria-hidden className="pointer-events-none absolute -top-16 -right-16 h-32 w-32 rounded-full bg-gradient-to-br from-brand/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl group-hover:from-brand/45 transition" />
                   <h3 className="font-semibold tracking-tight">{item.title}</h3>
                   <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                 </motion.article>
@@ -110,7 +158,7 @@ export default function About() {
             </div>
           </div>
           <motion.div
-            className="rounded-xl border border-border/60 bg-background/60 p-6 backdrop-blur"
+            className="rounded-2xl border border-border/60 bg-background/60 p-6 backdrop-blur"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -118,7 +166,7 @@ export default function About() {
           >
             <h3 className="text-lg font-semibold tracking-tight">Core Skill Matrix</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              A snapshot of current proficiency—continuously refined via hackathons, freelance work, and design jams.
+              Continuously refined through hackathons, GDGC initiatives, freelance collabs, and design sprints.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
               {skillMeter.map((skill) => (
@@ -139,7 +187,7 @@ export default function About() {
             {education.map((item) => (
               <motion.div
                 key={item.school + item.program}
-                className="rounded-xl border border-border/60 bg-background/60 p-6 backdrop-blur"
+                className="rounded-2xl border border-border/60 bg-background/60 p-6 backdrop-blur"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -163,7 +211,7 @@ export default function About() {
       </section>
 
       <section className="container">
-        <div className="mx-auto max-w-5xl rounded-xl border border-border/60 bg-background/60 p-6 backdrop-blur">
+        <div className="mx-auto max-w-5xl rounded-2xl border border-border/60 bg-background/60 p-6 backdrop-blur">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight">Resume</h2>
@@ -172,7 +220,7 @@ export default function About() {
               </p>
             </div>
             <a href="/resume.pdf" download>
-              <Button className="bg-gradient-to-r from-brand to-cyan-500 text-white">
+              <Button className="bg-gradient-to-r from-brand via-fuchsia-500 to-cyan-400 text-white">
                 <FileDown className="mr-2 size-4" />
                 Download PDF
               </Button>
@@ -182,26 +230,24 @@ export default function About() {
       </section>
 
       <section className="container">
-        <div className="mx-auto max-w-5xl rounded-xl border border-border/60 bg-background/60 p-6 backdrop-blur">
+        <div className="mx-auto max-w-5xl rounded-2xl border border-border/60 bg-background/60 p-6 backdrop-blur">
           <div className="grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight">Get in touch</h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                Open to internships, collaborations, and UX audits. Reach out with your ideas, and let’s build something futuristic together.
+                Open to internships, collaborations, and UI/UX audits. Reach out with your ideas — let’s build something futuristic together.
               </p>
               <div className="mt-5 flex flex-wrap gap-3 text-sm text-muted-foreground">
-                <a href="mailto:hello@prafull.dev" className="inline-flex items-center gap-2 hover:text-foreground">
+                <a href="mailto:hello@prafull.dev" className="inline-flex items-center gap-2 hover:text-brand">
                   <Mail className="size-4" />
                   hello@prafull.dev
                 </a>
-                <a href="https://github.com/" target="_blank" className="inline-flex items-center gap-2 hover:text-foreground">
-                  <Github className="size-4" />
-                  GitHub
-                </a>
-                <a href="https://linkedin.com/" target="_blank" className="inline-flex items-center gap-2 hover:text-foreground">
-                  <Linkedin className="size-4" />
-                  LinkedIn
-                </a>
+                {socials.map(({ label, href, icon: Icon }) => (
+                  <a key={label} href={href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-brand">
+                    <Icon className="size-4" />
+                    {label}
+                  </a>
+                ))}
               </div>
             </div>
             <motion.form
@@ -212,7 +258,9 @@ export default function About() {
                 const name = data.get("name");
                 const email = data.get("email");
                 const message = data.get("message");
-                window.location.href = `mailto:hello@prafull.dev?subject=Portfolio%20hello%20from%20${encodeURIComponent(String(name || ""))}&body=${encodeURIComponent(String(message || ""))}%0A%0AFrom:%20${encodeURIComponent(String(email || ""))}`;
+                window.location.href = `mailto:hello@prafull.dev?subject=Portfolio%20hello%20from%20${encodeURIComponent(String(
+                  name || ""
+                ))}&body=${encodeURIComponent(String(message || ""))}%0A%0AFrom:%20${encodeURIComponent(String(email || ""))}`;
               }}
               className="grid gap-4"
               initial={{ opacity: 0, y: 18 }}
@@ -224,22 +272,22 @@ export default function About() {
                 name="name"
                 placeholder="Your name"
                 required
-                className="rounded-md border border-border/60 bg-background/60 p-3 outline-none focus:ring-2 focus:ring-[hsl(var(--brand-500))]"
+                className="rounded-md border border-border/60 bg-background/70 p-3 outline-none focus:ring-2 focus:ring-[hsl(var(--brand-500))]"
               />
               <input
                 name="email"
                 type="email"
                 placeholder="Your email"
                 required
-                className="rounded-md border border-border/60 bg-background/60 p-3 outline-none focus:ring-2 focus:ring-[hsl(var(--brand-500))]"
+                className="rounded-md border border-border/60 bg-background/70 p-3 outline-none focus:ring-2 focus:ring-[hsl(var(--brand-500))]"
               />
               <textarea
                 name="message"
                 placeholder="Message"
                 required
-                className="min-h-32 rounded-md border border-border/60 bg-background/60 p-3 outline-none focus:ring-2 focus:ring-[hsl(var(--brand-500))]"
+                className="min-h-32 rounded-md border border-border/60 bg-background/70 p-3 outline-none focus:ring-2 focus:ring-[hsl(var(--brand-500))]"
               />
-              <Button type="submit" className="bg-gradient-to-r from-brand to-cyan-500 text-white">
+              <Button type="submit" className="bg-gradient-to-r from-brand via-fuchsia-500 to-cyan-400 text-white">
                 Send message
               </Button>
             </motion.form>

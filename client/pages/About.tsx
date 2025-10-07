@@ -257,9 +257,13 @@ export default function About() {
                 const name = data.get("name");
                 const email = data.get("email");
                 const message = data.get("message");
-                window.location.href = `mailto:hello@prafull.dev?subject=Portfolio%20hello%20from%20${encodeURIComponent(String(
-                  name || ""
-                ))}&body=${encodeURIComponent(String(message || ""))}%0A%0AFrom:%20${encodeURIComponent(String(email || ""))}`;
+                if (typeof window !== "undefined") {
+                  if (typeof window !== "undefined") {
+                  window.location.href = `mailto:hello@prafull.dev?subject=Portfolio%20hello%20from%20${encodeURIComponent(String(
+                    name || ""
+                  ))}&body=${encodeURIComponent(String(message || ""))}%0A%0AFrom:%20${encodeURIComponent(String(email || ""))}`;
+                }
+                }
               }}
               className="grid gap-4"
               initial={{ opacity: 0, y: 18 }}

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export default function SkillCircle({ label, value, className }: { label: string; value: number; className?: string }) {

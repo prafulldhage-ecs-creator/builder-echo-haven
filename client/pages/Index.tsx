@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import type { ComponentType, ReactNode } from "react";
 import { motion } from "framer-motion";
 import FuturisticPortrait from "@/components/FuturisticPortrait";
 import { Button } from "@/components/ui/button";
@@ -306,7 +307,7 @@ export default function Index() {
           <GlassyCard>
             <div className="space-y-4 text-sm text-muted-foreground">
               <p>
-                Drop a message or connect across platforms — I���m quick to respond and always excited to jam on bold ideas.
+                Drop a message or connect across platforms — I’m quick to respond and always excited to jam on bold ideas.
               </p>
               <div className="flex flex-col gap-3">
                 <a
@@ -394,7 +395,7 @@ function SectionHeading({
   );
 }
 
-function GlassyCard({ children }: { children: React.ReactNode }) {
+function GlassyCard({ children }: { children: ReactNode }) {
   return (
     <motion.div
       className="relative overflow-hidden rounded-2xl border border-border/60 bg-background/60 p-6 backdrop-blur"
@@ -409,7 +410,7 @@ function GlassyCard({ children }: { children: React.ReactNode }) {
   );
 }
 
-function TagChip({ children }: { children: React.ReactNode }) {
+function TagChip({ children }: { children: ReactNode }) {
   return (
     <span className="inline-flex items-center rounded-full border border-border/50 bg-background/70 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
       {children}
@@ -424,7 +425,7 @@ function SocialLink({
 }: {
   label: string;
   href: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: ComponentType<{ className?: string }>;
 }) {
   return (
     <a

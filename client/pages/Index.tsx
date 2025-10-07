@@ -332,9 +332,13 @@ export default function Index() {
               const name = data.get("name");
               const email = data.get("email");
               const message = data.get("message");
-              window.location.href = `mailto:hello@prafull.dev?subject=Portfolio%20hello%20from%20${encodeURIComponent(String(
-                name || ""
-              ))}&body=${encodeURIComponent(String(message || ""))}%0A%0AFrom:%20${encodeURIComponent(String(email || ""))}`;
+              if (typeof window !== "undefined") {
+                if (typeof window !== "undefined") {
+                  window.location.href = `mailto:hello@prafull.dev?subject=Portfolio%20hello%20from%20${encodeURIComponent(String(
+                    name || ""
+                  ))}&body=${encodeURIComponent(String(message || ""))}%0A%0AFrom:%20${encodeURIComponent(String(email || ""))}`;
+                }
+              }
             }}
             className="relative grid gap-4 rounded-2xl border border-border/60 bg-background/60 p-6 backdrop-blur"
             initial={{ opacity: 0, y: 18 }}
